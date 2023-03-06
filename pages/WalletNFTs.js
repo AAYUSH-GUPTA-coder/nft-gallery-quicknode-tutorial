@@ -28,8 +28,8 @@ function WalletNFTs() {
         <label
           className="text-white text-2xl font-extrabold pb-2"
           htmlFor="wallet-address"
-        >&nbsp
-          ; Ethereum Name Service  &nbsp;
+        >
+          &nbsp; Ethereum Name Service &nbsp;
         </label>
         <div className="search">
           <input
