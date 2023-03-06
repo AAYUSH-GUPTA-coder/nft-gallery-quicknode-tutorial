@@ -5,7 +5,7 @@ function WalletNFTs() {
   const [ensName, setEnsName] = useState("vitalik.eth"); //vitalik.eth
   const [cursor, setCursor] = useState("");
   const { nfts, isSearchValid, pageInfo } = useWalletNFTs({
-    address,
+    ensName,
     first: 12,
     after: cursor,
   });
@@ -28,14 +28,14 @@ function WalletNFTs() {
         <label
           className="text-white text-2xl font-extrabold pb-2"
           htmlFor="wallet-address"
-        >
-          &nbsp; ENS / Wallet address: &nbsp;
+        >&nbsp
+          ; Ethereum Name Service  &nbsp;
         </label>
         <div className="search">
           <input
             className="px-3 py-2 rounded-md"
             type="text"
-            value={ensName || address}
+            value={ensName}
             onChange={(e) => setEnsName(e.target.value)}
             style={{
               outlineColor:
